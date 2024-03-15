@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#slider{
+  width: 90vw;
+  margin: 30px auto;
+  display: flex;
+  gap: 10px;
+  height: 80vh;
+
+}
+#slider .slider-items{
+    position: relative;
+    flex: 1;
+    height: 100%;
+    border-radius: 50px;
+    overflow: hidden;
+    transition: all 1s;
+
+}
+.slider-items img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.slider-items p{
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    color: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1s;
+}
+.active{
+    flex: 8 !important;
+}
+.active p{
+    opacity: 1 !important;
+    visibility: visible !important;
+}
